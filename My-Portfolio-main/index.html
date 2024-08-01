@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">MyFolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profile-pic.png" alt="Sachin Gupta profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nirmalya Chatterjee</h1>
+        <h2>And I'm <span id="element"></span></h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('nirmalya_resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nirmalya-chatterjee-01046b28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Nirmalya-alt'"
+          />
+          <img
+            src="png-clipart-instagram-icon-computer-icons-instagram-logo-area.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/nirmalya1427?utm_source=qr&igsh=MTEzank5ZXJ5MnVqOA=='"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ months <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> BCA Bachelors Degree Ongoing</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I am Nirmalya and I work as a web developer. I am a software engineer who loves to create websites as well as apps for people. I think that people should look at the bigger picture when they are building something. I love to work in groups where everyone can voice their opinions and ideas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Additionally</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git/Github</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <!--Project 1-->>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="portfolioimage.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nirmalya-alt/portfolio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://codesandbox.io/s/github/Nirmalya-alt/portfolio/tree/main/portfolio2'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+            <!--Project 2-->>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Netflix.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nirmalya-alt/Netflix/tree/main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://codesandbox.io/s/github/Nirmalya-alt/Netflix/tree/main/netflix'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+            <!--Project 3-->>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images (1).jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nirmalya-alt/education-website'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://codesandbox.io/s/github/Nirmalya-alt/education-website/tree/main/website?file=/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+            <!--Project 4-->>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="unnamed.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Four</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nirmalya-alt/Amazon/tree/main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://codesandbox.io/s/github/Nirmalya-alt/Amazon/tree/main/amazon'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+            <!--Project 5-->>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="make-animated-social-icon-with-hover-3d-effect-using-css.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Five</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nirmalya-alt/Logo-Hover-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://codesandbox.io/s/github/Nirmalya-alt/Logo-Hover-/tree/main/hover'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<!--Project 6-->>
+
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="maxresdefault (1).jpg"
+      alt="Project 5"
+      class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Five</h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/Nirmalya-alt/card-swipe'"
+    >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://codesandbox.io/s/github/Nirmalya-alt/card-swipe/tree/main/swipe%20card'"
+    >
+      Live Demo
+    </button>
+  </div>
+</div>
+
+          
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:Nirmalyachatterjee617@gmail.com">Nirmalyachtterjee617@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nirmalya-chatterjee-01046b28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nirmalya Chatterjee. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js">
+    </script>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
+
+     // typing js
+     var typed = new Typed('#element', {
+         strings: ['Web Developer', 'Video Editor',' Enthusized Developer', 'Coder'],
+         typeSpeed: 80,
+         backSpeed: 60,
+         loop: true,
+     });
+let backToTopBtn = document.querySelector('#backToTopBtn')
+     window.onscroll = function () {
+        scroollBtn();
+     }
+function scroollBtn(){
+         if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+               backToTopBtn.style.display = 'block';
+         }
+           else{
+            backToTopBtn.style.display = 'none';
+         }
+     }
+function scrollToTop(){
+        window.scrollTo({
+         top : '0'
+        })
+     }
+ </script>
+
+  </body>
+</html>
